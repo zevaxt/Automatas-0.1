@@ -9,3 +9,6 @@ c:\users\zevaxtian\documents\visual studio 2013\Projects\Automatas 0.1\Automatas
 c:\users\zevaxtian\documents\visual studio 2013\Projects\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas_0._1.Visual.Inicial.resources
 c:\users\zevaxtian\documents\visual studio 2013\Projects\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas_0._1.Visual.Operaciones.resources
 c:\users\zevaxtian\documents\visual studio 2013\Projects\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas_0._1.Form1.resources
+C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas 0.1\bin\Debug\Automatas 0.1.exe.config
+C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas 0.1.exe
+C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas 0.1.pdb

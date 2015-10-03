@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*Git hud */
+
 namespace Automatas_0._1.Clases
 {
     
