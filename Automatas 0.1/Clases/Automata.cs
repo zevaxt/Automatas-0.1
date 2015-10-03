@@ -12,6 +12,7 @@ namespace Automatas_0._1.Clases
         String nombre;
         String tipo;
         LinkedList<Clases.Estado> listEstados;
-
+        //oe
+        
     }
 }
