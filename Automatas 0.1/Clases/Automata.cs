@@ -14,7 +14,18 @@ namespace Automatas_0._1.Clases
         String nombre;
         String tipo;
         LinkedList<Clases.Estado> listEstados;
+
         int oe;
+
+        public Automata() 
+        {
+            this.nombre = "";
+            this.tipo = "";
+        
+        
+        }
+        
+
         
     }
 }
