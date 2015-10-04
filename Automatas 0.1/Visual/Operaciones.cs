@@ -15,7 +15,7 @@ namespace Automatas_0._1.Visual
         public Operaciones()
         {
             InitializeComponent();
-            this.SetBounds(400, 100, 900, 550);
+
         }
     
         public void label1_Click(object sender, EventArgs e)
@@ -31,6 +31,11 @@ namespace Automatas_0._1.Visual
         public void Operaciones_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
       

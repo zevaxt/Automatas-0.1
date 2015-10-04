@@ -9,10 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-
-
-
-
 namespace Automatas_0._1
 {
     public partial class Form1 : Form
@@ -21,8 +17,7 @@ namespace Automatas_0._1
         public Form1()
         {
    
-            this.SetBounds(0, 0, 900, 550);
-            InitializeComponent();
+                      InitializeComponent();
             
         }
 
@@ -33,7 +28,7 @@ namespace Automatas_0._1
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
+            (new Visual.Operaciones()).Show();
 
         }
 
@@ -45,8 +40,6 @@ namespace Automatas_0._1
         private void button1_Click(object sender, EventArgs e)
         {
             (new Visual.Inicial()).Show();
-
-            this.Hide();
             
        
         }
