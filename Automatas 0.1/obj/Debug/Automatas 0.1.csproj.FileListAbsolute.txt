@@ -21,3 +21,9 @@ C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\obj\Debug\Autom
 C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\obj\Debug\Automatas_0._1.Visual.Operaciones.resources
 C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\obj\Debug\Automatas_0._1.Form1.resources
 C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\obj\Debug\Automatas 0.1.csproj.GenerateResource.Cache
+C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas 0.1.csprojResolveAssemblyReference.cache
+C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas_0._1.Properties.Resources.resources
+C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas_0._1.Visual.Inicial.resources
+C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas_0._1.Visual.Operaciones.resources
+C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas_0._1.Form1.resources
+C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas 0.1\obj\Debug\Automatas 0.1.csproj.GenerateResource.Cache
