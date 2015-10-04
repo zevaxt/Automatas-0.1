@@ -20,8 +20,10 @@ namespace Automatas_0._1
      
         public Form1()
         {
+   
+            this.SetBounds(0, 0, 900, 550);
             InitializeComponent();
-            this.SetBounds(400, 100, 900, 550);
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -47,6 +49,11 @@ namespace Automatas_0._1
             this.Hide();
             
        
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         

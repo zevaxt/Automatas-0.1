@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*Git hud */
-
 namespace Automatas_0._1.Clases
 {
     
@@ -15,7 +13,6 @@ namespace Automatas_0._1.Clases
         String tipo;
         LinkedList<Clases.Estado> listEstados;
 
-        int oe;
 
         public Automata() 
         {
