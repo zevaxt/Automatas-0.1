@@ -54,6 +54,7 @@
     <ApplicationIcon>Encounter Icon 125.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -75,25 +76,8 @@
     <Compile Include="Visual\Inicial.Designer.cs">
       <DependentUpon>Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Visual\Operaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Visual\Operaciones.Designer.cs">
-      <DependentUpon>Operaciones.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Visual\Principal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Visual\Principal.Designer.cs">
-      <DependentUpon>Principal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Visual\Principal1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Principal.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -105,17 +89,6 @@
     </Compile>
     <EmbeddedResource Include="Visual\Inicial.resx">
       <DependentUpon>Inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Visual\Operaciones.resx">
-      <DependentUpon>Operaciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Visual\Principal.jgo.resx">
-      <DependentUpon>Principal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Visual\Principal.resx">
-      <DependentUpon>Principal.cs</DependentUpon>
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Principal1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

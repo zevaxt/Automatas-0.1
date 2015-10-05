@@ -17,12 +17,7 @@ C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\obj
 C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas 0.1.pdb
 C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\bin\Release\Automatas 0.1.exe
 C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\bin\Release\Automatas 0.1.pdb
-C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\bin\Release\jgo\Automatas 0.1.resources.dll
 C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas 0.1.csprojResolveAssemblyReference.cache
 C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas_0._1.Properties.Resources.resources
 C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas_0._1.Visual.Inicial.resources
-C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas_0._1.Visual.Operaciones.resources
-C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas_0._1.Form1.resources
-C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas_0._1.Form1.jgo.resources
 C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas 0.1.csproj.GenerateResource.Cache
-C:\Users\ZEVAXTIAN\Desktop\PROGRAM\Automatas 0.1\Automatas-0.1\Automatas 0.1\obj\Release\jgo\Automatas 0.1.resources.dll

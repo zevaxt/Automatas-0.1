@@ -6,10 +6,21 @@ using System.Threading.Tasks;
 
 namespace Automatas_0._1.Clases
 {
-    class Estado
+    public class Estado
     {
-        String nombre;
-        LinkedList<Clases.Transicion> listTransiciones;
+        public String nombre;
+        public LinkedList<Clases.Transicion> listTransiciones;
+        public Boolean aceptador;
+
+        public Estado(String nombre) 
+        {
+            this.nombre = nombre;
+            this.listTransiciones = new LinkedList<Transicion>();
+            this.aceptador = false;
+
+        
+        
+        }
 
     }
 }
