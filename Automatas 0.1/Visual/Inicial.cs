@@ -88,7 +88,7 @@ namespace Automatas_0._1.Visual
             }
 
 
-            
+
 
 
         }
@@ -222,7 +222,7 @@ namespace Automatas_0._1.Visual
             tabla_dataGridView.Rows.Add("dd");
 
 
-            
+
 
 
 
@@ -242,22 +242,23 @@ namespace Automatas_0._1.Visual
 
         private void button3_Click(object sender, EventArgs e)
         {
-            String a="";
+            String a = "";
 
             foreach (DataGridViewRow fil in tabla_dataGridView.Rows)
-	        {
-		        foreach (DataGridViewColumn col in tabla_dataGridView.Columns)
-	            {
-		            
-	            }
-	        }
+            {
+                foreach (DataGridViewColumn col in tabla_dataGridView.Columns)
+                {
 
-      
+                }
+            }
 
 
 
 
 
 
+
+
+        }
     }
 }
