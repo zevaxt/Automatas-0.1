@@ -23,15 +23,52 @@ namespace Automatas_0._1.Visual
             panel_tabla.Visible = false;
             panel_diagrama.Visible = false;
 
-            automata = new Clases.Automata();
-
-
+            
+         
 
 
 
 
         }
+         public static void reconocer(String cadena, Clases.Automata automata )
+    {
+        Stack<Clases.Estado> estadoactual = new Stack<Clases.Estado>();
+      
+        foreach (Clases.Estado estadoactual1 in automata.listEstados)
+        {
+            if (estadoactual1.nombre.Equals(automata.inicial))
+            {
+                estadoactual.Push(estadoactual1);
+                for (int j = 0; j < cadena.Length; j++)
+                {
+                    int k=0;
+                    foreach (Clases.Transicion trans in estadoactual1.listTransiciones)
+                    {
+                       // System.out.println(String.valueOf(cadena.charAt(j)));
+                        if ((cadena.Substring(j,1)).Equals(trans.simbolo))
+                        {
+                            foreach (Clases.Estado estadoactual2 in automata.listEstados)
+                            {
+                                if(estadoactual2.nombre.Equals(trans.destino))
+                                {
+                                    estadoactual.Push(estadoactual2);
+                                    break;
+                                }
+                            }
+                            
+                        }
+                        k++;
+                    }
+                }
 
+            }
+           
+            
+        }
+              
+      
+        Console.WriteLine(estadoactual);
+    }
 
         public void Inicial_Load(object sender, EventArgs e)
         {
