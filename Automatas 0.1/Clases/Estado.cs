@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Automatas_0._1.Clases
 {
     public class Estado
@@ -13,14 +14,19 @@ namespace Automatas_0._1.Clases
         public Boolean aceptador;
         public Boolean Acesso;
 
+        
+
         public Estado(String nombre) 
         {
             this.nombre = nombre;
             this.listTransiciones = new LinkedList<Transicion>();
             this.aceptador = false;
-
-        
-        
+  }
+        public Estado(String nombre,Boolean aceptador)
+        {
+            this.nombre = nombre;
+            this.listTransiciones = new LinkedList<Transicion>();
+            this.aceptador = true;
         }
            public Estado(String nombre, LinkedList<Transicion> listTransiciones, Boolean aceptador) {
         this.nombre = nombre;

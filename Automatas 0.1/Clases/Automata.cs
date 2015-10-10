@@ -26,6 +26,13 @@ namespace Automatas_0._1.Clases
            
         
         }
+         public Automata(String nombre, String inicial, LinkedList<Estado> lista,LinkedList<String> listaAlfabeto)
+    {
+        this.nombre = nombre;
+        this.inicial = inicial;
+        this.listEstados = lista;
+        this.alfabeto = listaAlfabeto;
+    }
         
 
         
