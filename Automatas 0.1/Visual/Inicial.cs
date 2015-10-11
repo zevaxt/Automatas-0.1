@@ -74,6 +74,273 @@ namespace Automatas_0._1.Visual
         Console.WriteLine(automata.listEstados.ElementAt(automata.listEstados.Count-1).nombre);*/
         reverso(automata);
         }
+        public static Clases.Automata convertirVacias(Clases.Automata auto)
+    {
+        Clases.Automata nuevo = new Clases.Automata();
+        nuevo.alfabeto = auto.alfabeto;
+        nuevo.nombre = "dfa de: " + auto.nombre;
+        String oe2 = "";
+
+        LinkedList<Clases.Estado> lista = new LinkedList<Clases.Estado>();
+        for (int i = 0; i < auto.listEstados.Count; i++)
+        {
+            if (auto.inicial.Equals(auto.listEstados.ElementAt(i).nombre))
+            {
+
+                String inicial = auto.listEstados.ElementAt(i).nombre;
+                inicial = inicial + RecorrerVacias(inicial, auto, true);///a qie le mandamos un string 
+                nuevo.listEstados.AddLast(new Clases.Estado(inicial, false));
+                nuevo.inicial = inicial;
+                lista.AddLast(new Clases.Estado(inicial, false));
+            } else
+            {
+
+                while (lista.First!=null)
+
+                {
+
+                    String[] estados = lista.First().nombre.Split(',');
+                    for (int q=0;q<auto.alfabeto.Count;q++)
+                    {
+                        int cont = 0;
+                        Boolean es = true;
+                        String oe = "";
+
+                        for (int j = 0; j < estados.Length; j++)
+                        {
+                            for (int k = 0; k < auto.listEstados.Count(); k++)
+                            {
+                                if (auto.listEstados.ElementAt(k).nombre.Equals(estados[j]))
+                                {
+
+                                    for (int l = 0; l < auto.listEstados.ElementAt(k).getLista().Count(); l++)
+                                    {
+
+                                        if (auto.alfabeto.ElementAt(q).Equals(auto.listEstados.ElementAt(k).getLista().ElementAt(l).simbolo))
+                                        {
+                                            cont++;
+                                            if (!oe.Equals(""))
+                                            {
+                                                if (oe.IndexOf(auto.listEstados.ElementAt(k).getLista().ElementAt(l).destino) == -1)
+                                                {
+                                                    oe = oe + "," + auto.listEstados.ElementAt(k).getLista().ElementAt(l).destino;
+                                                }
+
+                                            } else
+                                            {
+                                                if (oe.IndexOf(auto.listEstados.ElementAt(k).getLista().ElementAt(l).destino) == -1)
+                                                {
+                                                    oe = auto.listEstados.ElementAt(k).getLista().ElementAt(l).destino;
+                                                    
+                                                }
+                                            }
+                                        }
+
+                                    }
+
+                                }
+                            }
+                        }
+                        if (cont == 0)
+                        {
+                            continue;
+                        }
+                        oe2="";
+
+                        String[] trans = oe.Split(',');
+                        for (int j = 0; j < trans.Length; j++)
+                        {
+                            oe2 =oe2+","+ trans[j] + RecorrerVacias(trans[j], auto, true);
+                        }
+                        trans=oe2.Split(',');
+                        //eliminar repetidos
+                        oe2="";
+                        for (int j = 0; j < trans.Length; j++)
+                        {
+                          if(oe2.IndexOf(trans[j])==-1){
+                          
+                            if(oe2.Equals(""))
+                           {
+                               oe2=trans[j];
+                           }
+                           else
+                           {
+                               oe2=oe2+","+trans[j];
+                           }
+                          }
+                        }
+                      
+                        String[] vector;
+                        String oe3 = "";
+                        for (int k = 0; k < nuevo.listEstados.Count(); k++)
+                        {
+                            vector = soniguales(nuevo.listEstados.ElementAt(k).nombre, oe2, lista.First().nombre);
+                            if (nuevo.listEstados.ElementAt(k).nombre.Equals(vector[2]))
+                            {
+                                nuevo.listEstados.ElementAt(k).getLista().AddLast(new Clases.Transicion(nuevo.listEstados.ElementAt(k).nombre, auto.alfabeto.ElementAt(q), vector[0]));
+                                oe3 = vector[0];
+                            }
+
+                            if (vector[0].Equals(vector[1]))
+                            {
+                                es = false;
+
+                            }
+                        }
+                        if (es == true)
+                        {
+                            nuevo.listEstados.AddLast(new Clases.Estado(oe3, false));
+
+                            lista.AddLast(nuevo.listEstados.Last());
+
+                        }
+                    }
+                    lista.RemoveFirst();
+
+                }
+
+                for (int w = 0; w < nuevo.listEstados.Count;w++ )
+                {
+                    String[] nombre = nuevo.listEstados.ElementAt(w).nombre.Split(',');
+                    for (int j = 0; j < nombre.Length; j++)
+                    {
+                        for (int k = 0; k < auto.listEstados.Count(); k++)
+                        {
+                            if (nombre[j].Equals(auto.listEstados.ElementAt(k).nombre))
+                            {
+                                if (auto.listEstados.ElementAt(k).aceptador)
+                                {
+                                    nuevo.listEstados.ElementAt(w).aceptador = true;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                break;
+            }
+
+        }
+       return nuevo;
+    }
+
+        public static String RecorrerVacias(String cadena, Clases.Automata auto, Boolean ban)
+        {
+            String oe = "";
+            if (ban)
+            {
+                for (int i = 0; i < auto.listEstados.Count(); i++)
+                {
+
+                    if (cadena.Equals(auto.listEstados.ElementAt(i).nombre))
+                    {
+                        int cont = 0;
+
+                        for (int j = 0; j < auto.listEstados.ElementAt(i).getLista().Count(); j++)
+                        {
+                            if (auto.listEstados.ElementAt(i).getLista().ElementAt(j).simbolo.Equals("-"))
+                            {
+                                if (oe.IndexOf(auto.listEstados.ElementAt(i).getLista().ElementAt(j).destino) == -1)
+                                {
+
+                                    oe = oe + "," + auto.listEstados.ElementAt(i).getLista().ElementAt(j).destino;
+
+                                    oe += RecorrerVacias(auto.listEstados.ElementAt(i).getLista().ElementAt(j).destino, auto, true);
+
+                                }
+
+                            }
+                            else
+                            {
+                                cont++;
+                            }
+
+                        }
+                        if (cont == auto.listEstados.ElementAt(i).getLista().Count())
+                        {
+
+                            oe += RecorrerVacias(cadena, auto, false);
+                            return oe;
+                        }
+
+                    }
+                }
+
+            }
+            return oe;
+        }
+
+        private static String[] soniguales(String nombre, String oe2, String lista)
+    {
+        String[] com1 = nombre.Split('.');
+        String[] com2 = oe2.Split(',');
+        String[] com3 = lista.Split(',');
+        List<String> comp1 = new List<string>();
+        List<String> comp2 = new List<String>();
+        List<String> comp3 = new List<String>();
+        for (int j = 0; j < com1.Length; j++)
+        {
+            comp1.Add(com1[j]);
+        }
+        for (int j = 0; j < com2.Length; j++)
+        {
+            comp2.Add(com2[j]);
+        }
+        for (int j = 0; j < com3.Length; j++)
+        {
+            comp3.Add(com3[j]);
+        }
+        comp1.Sort();
+        comp2.Sort();
+        comp3.Sort();
+      
+        
+        nombre = "";
+        oe2 = "";
+        lista = "";
+        for (int i = 0; i < comp1.Count(); i++)
+        {
+            if (nombre.Equals(""))
+            {
+                nombre = comp1.ElementAt(i);
+
+            } else
+            {
+                nombre = nombre + "," + comp1.ElementAt(i);
+            }
+
+        }
+        for (int i = 0; i < comp3.Count(); i++)
+        {
+            if (lista.Equals(""))
+            {
+                lista = comp3.ElementAt(i);
+
+            } else
+            {
+                lista = lista + "," + comp3.ElementAt(i);
+            }
+
+        }
+        for (int i = 0; i < comp2.Count(); i++)
+        {
+            if (oe2.Equals(""))
+            {
+                oe2 = comp2.ElementAt(i);
+            } else
+            {
+                oe2 = oe2 + "," + comp2.ElementAt(i);
+            }
+
+        }
+        String[] vector =
+        {
+            oe2, nombre, lista
+        };
+        return vector;
+
+    }
+
         public static Clases.Automata union(Clases.Automata auto1, Clases.Automata auto2)
     {
         Clases.Automata nuevo = new Clases.Automata();

@@ -43,6 +43,9 @@ namespace Automatas_0._1.Clases
         }
         
     }
-
+           public LinkedList<Transicion> getLista()
+           {
+               return this.listTransiciones;
+           }
     }
 }
