@@ -9,6 +9,7 @@ using Microsoft.VisualBasic;
 using System.Threading;
 using System.Drawing.Drawing2D;
 
+
 namespace Automatas_0._1.Clases
 {
     [Serializable]
@@ -17,6 +18,7 @@ namespace Automatas_0._1.Clases
         public String nombre;
         public LinkedList<Clases.Transicion> listTransiciones;
         public Boolean aceptador;
+<<<<<<< HEAD
         public Boolean inicial;
         public int x;
         public int y;
@@ -46,12 +48,18 @@ namespace Automatas_0._1.Clases
 
         }
 
+=======
+        public Boolean Acesso;
+
+        
+>>>>>>> origin/master
 
         public Estado(String nombre) 
         {
             this.nombre = nombre;
             this.listTransiciones = new LinkedList<Transicion>();
             this.aceptador = false;
+<<<<<<< HEAD
             this.inicial = false;
             this.x = 40;
             this.y = 200;
@@ -61,8 +69,25 @@ namespace Automatas_0._1.Clases
     
 
         
-        
+=======
+  }
+        public Estado(String nombre,Boolean aceptador)
+        {
+            this.nombre = nombre;
+            this.listTransiciones = new LinkedList<Transicion>();
+            this.aceptador = true;
         }
+           public Estado(String nombre, LinkedList<Transicion> listTransiciones, Boolean aceptador) {
+        this.nombre = nombre;
+        this.listTransiciones = listTransiciones;
+        this.aceptador = aceptador;
+>>>>>>> origin/master
+        
+        if(aceptador)
+        {
+            this.Acesso = true;
+        }
+<<<<<<< HEAD
         public void pintarEstados(Graphics papel)
         {
            
@@ -171,5 +196,17 @@ namespace Automatas_0._1.Clases
 
 
 
+=======
+        else
+        {
+            this.Acesso=false;
+        }
+        
+    }
+           public LinkedList<Transicion> getLista()
+           {
+               return this.listTransiciones;
+           }
+>>>>>>> origin/master
     }
 }
