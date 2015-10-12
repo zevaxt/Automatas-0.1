@@ -30,3 +30,10 @@ D:\Multimedia\Documents\GitHub\Automatas-0.1\Automatas-0.1\Automatas 0.1\obj\Rel
 D:\Multimedia\Documents\GitHub\Automatas-0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas_0._1.Properties.Resources.resources
 D:\Multimedia\Documents\GitHub\Automatas-0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas_0._1.Visual.Inicial.resources
 D:\Multimedia\Documents\GitHub\Automatas-0.1\Automatas-0.1\Automatas 0.1\obj\Release\Automatas 0.1.csproj.GenerateResource.Cache
+C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\bin\Release\Automatas 0.1.exe.config
+C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\obj\Release\Automatas 0.1.exe
+C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\obj\Release\Automatas 0.1.pdb
+C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\obj\Release\Automatas 0.1.csprojResolveAssemblyReference.cache
+C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\obj\Release\Automatas_0._1.Properties.Resources.resources
+C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\obj\Release\Automatas_0._1.Visual.Inicial.resources
+C:\Users\GianCarlos\Documents\GitHub\Automatas-0.1\Automatas 0.1\obj\Release\Automatas 0.1.csproj.GenerateResource.Cache
